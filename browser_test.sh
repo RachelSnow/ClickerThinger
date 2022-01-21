@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# sudo apt-get install xautomation wmctrl xdotool
+
 xdotool exec firefox
 sleep $(bc <<< "scale=2; $(shuf -i 2000-5000 -n 1)/1000")
 wmctrl -a "Mozilla Firefox"
